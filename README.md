@@ -90,3 +90,26 @@ during emergencies and disasters.
 ---
 
 ## 🧠 Matching Algorithm — How It Works
+
+The algorithm runs in 3 phases when "Run Matching" is clicked:
+
+**Phase 1 — Priority Queue**
+All pending help requests are sorted by urgency level.
+High urgency requests are processed first, then Medium, then Low.
+This ensures critical cases are never delayed.
+
+**Phase 2 — Greedy Skill Filter**
+For each request, volunteers are filtered by required skill.
+Example — a Medical request only considers volunteers with medical skill.
+Volunteers already assigned are excluded automatically.
+
+**Phase 3 — Haversine Distance Score**
+Among skill-matched volunteers, the nearest one is selected.
+Real GPS coordinates are used to calculate distance in kilometers.
+A match score (0-100%) is shown — higher score = better match.
+
+**Result**
+The best volunteer is suggested with a one-click Assign button.
+Once assigned, the volunteer is marked unavailable.
+The request status updates from Pending → Assigned.
+When help is delivered, Mark Complete frees the volunteer again.
