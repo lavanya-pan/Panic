@@ -8,7 +8,7 @@ during emergencies and disasters.
 ---
 
 ## 🚀 Live Demo
-[Click here to view the live app][(https://codesandbox.io/p/github/lavanya-pan/Panic/main?import=true&workspaceId=ws_MhYrobWyTjEFUTsdGCkBvq)]
+[Click here to view the live app][https://codesandbox.io/p/sandbox/qksck4]
 
 ---
 
